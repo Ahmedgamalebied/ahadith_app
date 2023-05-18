@@ -22,8 +22,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   void initState() {
     Timer(const Duration(seconds: 5), () {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const HomeView()));
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (context) => HomeView()));
     });
     super.initState();
     animationController =
