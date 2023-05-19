@@ -1,9 +1,9 @@
-import '../model/hadithe_model.dart';
+import '../model/hadithe.dart';
 
 class Mydata {
-  static Hadith hadith = Hadith();
   static Map<String, Hadith> maphadiths = Map<String, Hadith>();
   static List<Hadith> listhadiths = <Hadith>[];
+  static Hadith hadith = Hadith();
 
   static Future<List<Hadith>> getAlldata() async {
     listhadiths.clear();
